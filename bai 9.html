@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 9</title>
+</head>
+
+<body>
+    <script>
+        let toan = parseFloat(prompt("Điểm môn Toán"));
+        let ly = parseFloat(prompt("Điểm môn Lý"));
+        let hoa = parseFloat(prompt("Điểm môn Hóa"));
+        let van = parseFloat(prompt("Điểm môn Văn"));
+        let su = parseFloat(prompt("Điểm môn Sử"));
+        let dia = parseFloat(prompt("Điểm môn Địa"));
+        let diemTrungBinh = (toan + ly + hoa + van + su + dia) / 6;
+        if (diemTrungBinh < 5.0) {
+            console.log("xếp loại YẾU");
+        } else if (diemTrungBinh <= 6.4) {
+            console.log("xếp loại TRUNG BÌNH");
+        } else if (diemTrungBinh <= 7.9) {
+            console.log("xếp loại KHÁ");
+        } else if (diemTrungBinh <= 10) {
+            console.log("xếp loại GIỎI");}
+    </script>
+</body>
+
+</html>
